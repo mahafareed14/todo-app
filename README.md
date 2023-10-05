@@ -20,5 +20,10 @@ npm run build
 npm run lint
 ```
 
+### Download Sass webpack configuration
+```
+npm install --save-dev sass-loader sass webpack
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
