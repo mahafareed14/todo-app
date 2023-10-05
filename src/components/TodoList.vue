@@ -2,16 +2,16 @@
     import TodoItem from './TodoItem.vue'
     export default {
         name: 'TodoList',
-            components: {
-                TodoItem
-            },
+        components: {
+            TodoItem
+        },
         props: {
             msg: String
         },
         data: ()=> ({
             todo: '',
             data_todo: [], 
-            }),
+        }),
         methods: {
             addTodo() {
                 if(this.todo.length != 0) {
@@ -23,14 +23,15 @@
                 this.todo = '';
                 }       
             },
+
             removeTodo(item_name) {
                this.data_todo = this.data_todo.filter(item => item.message!==item_name);
             },
+            
             removeTodoAll() {
                 this.data_todo = [];
             }
         }
-
     }
   </script>
 <template>
