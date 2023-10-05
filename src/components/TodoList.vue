@@ -13,6 +13,7 @@
             data_todo: [], 
         }),
         methods: {
+            // to add new task to the list
             addTodo() {
                 if(this.todo.length != 0) {
                     let item = {
@@ -24,10 +25,12 @@
                 }       
             },
 
+            // to remove task from the list
             removeTodo(item_name) {
                this.data_todo = this.data_todo.filter(item => item.message!==item_name);
             },
             
+            //to clear the list
             removeTodoAll() {
                 this.data_todo = [];
             }

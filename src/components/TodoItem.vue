@@ -4,6 +4,7 @@
         <button @click="$emit('remove')"> X </button>
     </div>   
 </template>
+
 <script>
 export default {
     name: 'TodoItem',
